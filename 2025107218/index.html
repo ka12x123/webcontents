@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        flex-basis: 7vh;
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        display: flex;
+        align-items: center;
+
+        & .header1 {
+            display: flex;
+            align-items: center;
+            height: 7vh;
+            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            position: fixed;
+            width: 100vw;
+
+            & .logo {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .main {
+        height: 1500px;
+        display: flex;
+    }
+
+    .title1 {
+        flex-basis: 50%;
+    }
+
+    .hoho {
+        margin: 20px;
+        height: 40%;
+        display: grid;
+        grid-template-areas:
+            'a a b'
+            'c c b'
+            'd e e'
+        ;
+        gap: 10px;
+
+        & .image {
+            border-radius: 10px;
+            border: solid 1px black;
+            background-color: #8fd3f4;
+
+            &:nth-child(1) {
+                background-image: url('./media/꽃.jpg');
+                background-position: center;
+                background-size: cover;
+                grid-area: a;
+            }
+
+            &:nth-child(2) {
+                background-image: url('./media/다운로드.jfif');
+                background-position: center;
+                background-size: cover;
+                grid-area: b;
+            }
+
+            &:nth-child(3) {
+                background-image: url("./media/세로\ 픽셀.png");
+                background-position: center;
+                background-size: cover;
+                grid-area: c;
+            }
+
+            &:nth-child(4) {
+                background-image: url("./media/엘비스\ 사진.jpg");
+                background-position: center;
+                background-size: cover;
+                grid-area: d;
+            }
+
+            &:nth-child(5) {
+                background-image: url("./media/픽셀\ 네모.png");
+                background-position: center;
+                background-size: cover;
+                grid-area: e;
+            }
+        }
+    }
+
+    .title2 {
+        flex-basis: 50%;
+    }
+
+    .pooter {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: brown;
+        flex-basis: 10vh;
+    }
+
+    img {
+        border-radius: 20px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header1">
+                <h1 class="logo">HTML</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="title1">
+                <div class="hoho">
+                    <div class="image"></div>
+                    <div class="image"></div>
+                    <div class="image"></div>
+                    <div class="image"></div>
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="title2">
+                <table>
+                    <tbody>
+                        <tr>
+                            <table border="1">
+                                <caption>1학기 성적</caption>
+                                <thead>
+                                    <tr>
+                                        <th>이름</th>
+                                        <th>CSS</th>
+                                        <th>html</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>이도경</th>
+                                        <th>230</th>
+                                        <th>300</th>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <th>김수혁</th>
+                                        <th>230</th>
+                                        <th>300</th>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <th>김진</th>
+                                        <th>230</th>
+                                        <th>300</th>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>합</th>
+                                        <th>230</th>
+                                        <th>300</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                <table border="1">
+                    <caption>1학기 성적</caption>
+                    <thead>
+                        <tr>
+                            <th>이름</th>
+                            <th>CSS</th>
+                            <th>html</th>
+                            <th>300</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>이도경</th>
+                            <th>230</th>
+                            <th>300</th>
+                            <th>300</th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th>김수혁</th>
+                            <th>230</th>
+                            <th>300</th>
+                            <th>300</th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th>김진</th>
+                            <th>230</th>
+                            <th>300</th>
+                            <th>300</th>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>합</th>
+                            <th>230</th>
+                            <th>300</th>
+                            <th>300</th>
+                        </tr>
+                    </tfoot>
+                </table>
+                <table border="1">
+                    <caption>좋아하는 사진표</caption>
+                    <thead>
+                        <tr>
+                            <th>푸른</th>
+                            <th>다채로운</th>
+                            <th>흑백</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="./media/꽃.jpg" width="150px" alt=""></td>
+                            <td><img src="./media/다운로드.jfif" width="150px" alt=""></td>
+                            <td><img src="./media/엘비스 사진.jpg" width="150px" alt=""></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>R꽃</th>
+                            <th>카멜레온</th>
+                            <th>앨비스</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <div class="pooter">pooter</div>
+    </div>
+</body>
+
+</html>
